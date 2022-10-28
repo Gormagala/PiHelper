@@ -1,0 +1,47 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>PiHelper : Plex</title>
+</head>
+
+<body>
+<h1 align="center">PiHelper : Plex</h1>
+<br><br><br>
+
+<h2>Pré-requis :</h2>
+<ul> Un accès SSH au Raspberry Pi</ul>
+<ul>Un accès internet sur votre Raspberry Pi</ul>
+<br><br>
+<h2>1. Mises à jour et installations</h2>
+<h3>I. Connectez vous en SSH au Raspberry Pi </h3>
+<br>
+<h3>II. Après mettez à jour votre OS : </h3>
+<br>
+<ul>sudo apt-get update</ul>
+<br>
+<ul>sudo apt-get upgrade</ul>
+<br><br>
+<h2>2. Installation de Plex Media Server</h2>
+<h3>I. Il faut installer apt-transport-https pour télécharger des packages de Plex en HTTPS</h3>
+<br>
+<ul>sudo apt-get install apt-transport-https</ul>
+<h3>II. Il faut maintenant ajouter Plex à la lisye des sources de gestionnaire de packages</h3>
+<ul>curl https://downloads.plex.tv/plex-keys/PlexSign.key | sudo apt-key add -</ul>
+<h3>III. Puis cette commande :</h3>
+<br>
+<ul>echo deb https://downloads.plex.tv/repo/deb public main | sudo tee /etc/apt/sources.list.d/plexmediaserver.list</ul>
+<h3>IV. Mettre à jour APT</h3>
+<br>
+<ul>sudo apt-get update</ul>
+<h3>V. Il reste plus qu'a installer Plex Media Server :</h3>
+<br>
+<ul>sudo apt install plexmediaserver</ul>
+<br>
+<h3>Ajouter ses bibliothèques à Plex</h3>
+<br>
+<ul>IP du Pi:32400/web</ul>
+</body>
+
+
+
+</html>
