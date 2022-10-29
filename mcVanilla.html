@@ -1,0 +1,72 @@
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>PiHelper : Vanilla</title>
+
+</head>
+<body>
+
+<h1 align="center">PiHelper : Minecraft Vanilla</h1>
+<br><br><br>
+
+<h2>Ce tuto est pour faire un serveur Vanilla 1.16.4, la démarche est presque pareil pour les autres versions</h2>
+<br><br>
+<h3>1. Connection</h3>
+<br>
+<h3>I. Connectez vous en SSH à votre raspberry pi</h3>
+<br><br>
+<h3>II. Après mettez à jour votre OS :</h3>
+<br><br>
+<ul>sudo apt-get update</ul>
+<ul>sudo apt-get upgrade</ul>
+<br>
+<h3>2. Téléchargement du serveur</h3>
+<br>
+<h3>I. Il faut télécharger le .jar de démarrage de Minecraft Server</h3>
+<br><br>
+<ul>wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar</ul>
+<br>
+<h3>3. Lancer le serveur</h3>
+<br>
+<h3>I. Il faut créer un script .sh pour démarrer le serveur</h3>
+<br><br>
+<ul>nano start.sh</ul>
+<br>
+<h3>II. Et mettre ce code :</h3>
+<br>
+<ul>java -Xmx1024M -Xms1024M -jar server.jar nogui</ul>
+<h3>III. Et sauvegarder en faisant :</h3>
+<ul>CTRL+X </ul>
+<ul>O</ul>
+<ul>Entrée</ul>
+<br>
+<h3>IV. Et maintenant ce donner la permission d'exécuter le script</h3>
+<br>
+<ul>chmod +x start.sh</ul>
+<br>
+<h3>V. Et maintenant exécuter le script</h3>
+<br>
+<ul>./start.sh</ul>
+<br>
+<h3>VI.Le serveur démarre et.... Erreur !</h3>
+<h3>C'est normal, il faut accepter les EULA de minecraft</h3>
+<br>
+<ul>nano eula.txt</ul>
+<h3>VII. Il faut changer false par true</h3>
+<h3>Et sauvegarder le fichier</h3>
+<ul>CTRL+X</ul>
+<ul>O</ul>
+<ul>Entrée</ul>
+<h3>VIII. Et maintenant vous avez fini !</h3>
+<br>
+<ul>./start.sh</ul>
+<br><br><br><br>
+<h6 align="center">PiHelper 2022-2023. Tous droits réservés</h6>
+</body>
+
+
+
+
+
+
+</html>
