@@ -1,1 +1,55 @@
-<h1>Soon.....</h1>
+<html>
+<head>
+<title>PiHelper : Docker</title>
+<meta charset="UTF-8" />
+</head>
+
+
+<body>
+
+<h1 align="center">PiHelper : Docker</h1>
+<a href="index.html"><img src="back.png" alt="Retour au sommaire" height="50" width="50"/></a>
+<br><br><br>
+
+<h2>Ce tuto est pour télécharger et installer Docker sur Raspberry Pi</h2>
+<br><br>
+<h3>1. Ressources</h3>
+<br>
+<h3>I. Connectez vous en SSH à votre raspberry pi</h3>
+<br><br>
+<h3>II. Après mettez à jour votre OS</h3>
+<br><br>
+<ul>sudo apt-get update</ul>
+<ul>sudo apt-get upgrade</ul>
+<br>
+<h3>III. Télécharger docker</h3>
+<br><br>
+<uL>curl -fsSL https://get.docker.com -o get-docker.sh</uL>
+<ul>sudo sh get-docker.sh</ul>
+<br>
+<h3>IV. Il faut maintenant ajouter les permissions docker</h3>
+<br><br>
+<ul>sudo usermod -aG docker [utilisateur]</ul>
+<br>
+<h3>V. Maintenant il faut redémarrer la Raspberry Pi</h3>
+<br><br>
+<ul>sudo reboot</ul>
+<br>
+<h3>VI. Reconnectez-vous en SSH</h3>
+<br><br>
+<ul>docker run hello-world</ul>
+<br><br><br><br>
+<h6 align="center">PiHelper 2022-2023. Tous droits réservés</h6>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

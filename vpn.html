@@ -1,0 +1,56 @@
+<html>
+<head>
+
+<title>PiHelper : VPN</title>
+<meta charset="utf-8" />
+
+</head>
+<body>
+
+<h1 align="center">PiHelper : VPN</h1>
+<a href="index.html"><img src="back.png" alt="Retour au sommaire" height="50" width="50"/></a>
+<br><br><br>
+
+<h2>Ce tuto est pour transformer votre Raspberry en Serveur VPN</h2>
+<br><br>
+<h3>1. Ressources</h3>
+<br>
+<h3>Connectez-vous en SSH à votre Raspberry Pi</h3>
+<br><br>
+<h3>II. Après mettez à jour votre OS</h3>
+<br><br>
+<ul>sudo apt-get update</ul>
+<ul>sudo apt-get upgrade</ul>
+<br>
+<h3>III. Télécharger le script OPENVPN</h3>
+<br><br>
+<uL>wget https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh -O openvpn-install.sh</uL>
+<ul>sudo bash openvpn-install.sh</ul>
+<img src="https://raspberrytips.fr/wp-content/uploads/2021/01/installation-openvpn.jpg?ezimgfmt=ng:webp/ngcb4" alt="openvpn script" height="300" width="300"> 
+<br>
+<h3>La plupart du temps, vous pouvez garder les options par défaut.
+    Contentez de vous de cliquer sur « Entrée » si vous ne savez pas trop quoi répondre.
+    <br>
+    L’installation d’OpenVPN démarre.
+    Quelques secondes plus tard, l’assistant vous demandera de créer votre premier utilisateur.
+    Donnez-lui un nom (votre prénom ou le nom de l’appareil qui utilisera ce compte par exemple), et définissez le mot de passe si besoin (cela n’est pas indispensable).</h3>
+
+<br><br>
+<h3>Le serveur VPN est prêt ! </h3>
+<br>
+<h3>Maintenant il faut ouvrir ses ports de box 1194 (regarder sur internet pour plus d'info)</h3>
+<h3>Exemple pour Livebox :</h3>
+<img src="https://raspberrytips.fr/wp-content/uploads/2021/01/port-forwarding.jpg?ezimgfmt=ng:webp/ngcb4">
+<br><br><br><br>
+<h6 align="center">PiHelper 2022-2023. Tous droits réservés</h6>
+</body>
+
+
+</body>
+
+
+
+
+
+
+</html>
