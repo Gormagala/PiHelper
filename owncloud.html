@@ -1,69 +1,29 @@
+<!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8" />
-<title>PiHelper : Vanilla</title>
+
+<title>PiHelper : OwnCloud</title>
+<meta charset="utf-8" />
 <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKBB3/AAAA/wAAAP8AAAD/CgQd/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/TSXP/08m1v9PJtb/TybW/08m1v8KBB3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/TybW/woEHf9PJtb/TybW/08m1v8KBB3/TybW/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/TybW/08m1v9PJtb/CgQd/woEHf8KBB3/TybW/08m1v9PJtb/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/08m1v9PJtb/CgQd/08m1v9PJtb/TybW/woEHf9PJtb/TybW/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAA/08m1v8KBB3/CgQd/08m1v9PJtb/TybW/08m1v9PJtb/CgQd/woEHf9PJtb/AAAA/wAAAAAAAAAAAAAAAAAAAP9PJtb/TybW/08m1v8KBB3/TybW/08m1v9PJtb/CgQd/08m1v9PJtb/TybW/wAAAP8AAAAAAAAAAAAAAAAAAAD/TybW/08m1v9PJtb/TybW/woEHf8KBB3/CgQd/08m1v9PJtb/TybW/08m1v8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAP9PJtb/AAAA/wAAAP9PJtb/TybW/08m1v8AAAD/AAAA/08m1v8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/08m1v8KBB3/TybW/08m1v9PJtb/CgQd/08m1v8AAAD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoEHf9PJtb/AAAA/wAAAP8AAAD/AAAA/woEHf9PJtb/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/LrJg/y6yYP8AAAD/AAAA/wAAAP8usmD/LrJg/wAAAP8AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/LrJg/y6yYP8AAAD/LrJg/wAAAP8usmD/AAAA/y6yYP8usmD/AAAA/wAAAAAAAAAAAAAAAAAAAAAKBB3/LrJg/y6yYP8AAAD/LrJg/y6yYP8AAAD/LrJg/y6yYP8AAAD/LrJg/y6yYP8AAAD/AAAAAAAAAAAAAAAACgQd/y6yYP8usmD/LrJg/y6yYP8usmD/AAAA/y6yYP8usmD/LrJg/y6yYP8usmD/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAAAAAAA/B8AAPgPAADwBwAA4AMAAOADAADAAQAAwAEAAMABAADgAwAA4AMAAPAHAADwBwAA4AMAAMABAADAAQAA4IMAAA==" rel="icon" type="image/x-icon" />
+
+
+
 </head>
 <body>
-
-<h1 align="center">PiHelper : Minecraft Vanilla</h1>
+<h1 align="center">PiHelper : OwnCloud</h1>
 <a href="index.html"><img src="back.png" alt="Retour au sommaire" height="50" width="50"/></a>
 <br><br><br>
 
-<h2>Ce tuto est pour faire un serveur Vanilla 1.16.4, la démarche est presque pareil pour les autres versions</h2>
-<br><br>
-<h3>1. Connection</h3>
-<br>
-<h3>I. Connectez vous en SSH à votre raspberry pi</h3>
-<br><br>
-<h3>II. Après mettez à jour votre OS :</h3>
-<br><br>
-<ul>sudo apt-get update</ul>
-<ul>sudo apt-get upgrade</ul>
-<br>
-<h3>2. Téléchargement du serveur</h3>
-<br>
-<h3>I. Il faut télécharger le .jar de démarrage de Minecraft Server</h3>
-<br><br>
-<ul>wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3d7cd/server.jar</ul>
-<br>
-<h3>3. Lancer le serveur</h3>
-<br>
-<h3>I. Il faut créer un script .sh pour démarrer le serveur</h3>
-<br><br>
-<ul>nano start.sh</ul>
-<br>
-<h3>II. Et mettre ce code :</h3>
-<br>
-<ul>java -Xmx1024M -Xms1024M -jar server.jar nogui</ul>
-<h3>III. Et sauvegarder en faisant :</h3>
-<ul>CTRL+X </ul>
-<ul>O</ul>
-<ul>Entrée</ul>
-<br>
-<h3>IV. Et maintenant ce donner la permission d'exécuter le script</h3>
-<br>
-<ul>chmod +x start.sh</ul>
-<br>
-<h3>V. Et maintenant exécuter le script</h3>
-<br>
-<ul>./start.sh</ul>
-<br>
-<h3>VI.Le serveur démarre et.... Erreur !</h3>
-<h3>C'est normal, il faut accepter les EULA de minecraft</h3>
-<br>
-<ul>nano eula.txt</ul>
-<h3>VII. Il faut changer false par true</h3>
-<h3>Et sauvegarder le fichier</h3>
-<ul>CTRL+X</ul>
-<ul>O</ul>
-<ul>Entrée</ul>
-<h3>VIII. Et maintenant vous avez fini !</h3>
-<br>
-<ul>./start.sh</ul>
-<br><br><br><br>
-<h6 align="center">PiHelper 2022-2023. Tous droits réservés</h6>
+<h2>Ce tuto est pour transformer votre raspberry pi en serveur cloud avec owncloud</h2>
+
+
 </body>
+
+
+
+
+
+
 
 
 
