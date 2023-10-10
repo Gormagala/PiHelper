@@ -1,0 +1,77 @@
+/* Réinitialisation des styles par défaut */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles de base pour le corps de la page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Styles pour le titre h1 */
+h1 {
+  font-size: 36px;
+  color: #333;
+  margin-top: 20px;
+}
+
+/* Styles pour les liens */
+a {
+  text-decoration: none;
+  color: #0078d4;
+  font-weight: bold;
+}
+
+/* Styles pour les liens au survol de la souris */
+a:hover {
+  color: #004e8c;
+}
+
+/* Styles pour les boutons de connexion et d'inscription */
+#login, #signin {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #0078d4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* Style spécifique pour le bouton d'inscription */
+#signin {
+  background-color: #4caf50;
+  margin-left: 20px;
+}
+
+/* Styles pour les liens de navigation */
+a.nav-link {
+  display: block;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Style pour le pied de page */
+h6 {
+  font-size: 12px;
+  color: #777;
+  margin-top: 20px;
+}
+
+/* Style pour les séparateurs */
+br.separator {
+  border-top: 1px solid #ccc;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
